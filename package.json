@@ -1,0 +1,49 @@
+{
+  "name": "lerna-changelog-label-types",
+  "description": "Label type definition for lerna-changelog",
+  "version": "0.0.0",
+  "author": {
+    "name": "kazuya kawaguchi",
+    "email": "kawakazu80@gmail.com"
+  },
+  "changelog": {
+    "labels": {
+      "Type: Feature": ":star: Features",
+      "Type: Bug": ":bug: Bug Fix",
+      "Type: Security": ":lock: Security Fix",
+      "Type: Performance": ":chart_with_upwards_trend: Performance Fix",
+      "Type: Improvement": ":zap: Improvement Feature",
+      "Type: Breaking": ":boom: Breaking Change",
+      "Type: Deprecated": ":warning: Deprecated Feature",
+      "Type: I18n": ":globe_with_meridians: Internationalization",
+      "Type: A11y": ":wheelchair: Accessibility",
+      "Type: Refactoring": ":shirt: Refactoring",
+      "Type: Testing": ":white_check_mark: Testing",
+      "Type: Documentation": ":pencil: Documentation",
+      "Type: Example": ":lollipop: Example",
+      "Type: Dependency": ":push_pin: Dependency",
+      "Type: Configration": ":wrench: Configration",
+      "Type: Build": ":package: Build"
+    }
+  },
+  "devDependencies": {
+    "lerna-changelog": "^0.8.3",
+    "shipjs": "^0.11.0"
+  },
+  "homepage": "https://github.com/kazupon/lerna-changelog-label-types#readme",
+  "keywords": [
+    "labels",
+    "lerna-changelog"
+  ],
+  "license": "MIT",
+  "main": "null.js",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kazupon/lerna-changelog-label-types.git"
+  },
+  "scripts": {
+    "release:prepare": "shipjs prepare",
+    "release:trigger": "shipjs trigger"
+  }
+}
