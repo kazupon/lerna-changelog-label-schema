@@ -1,4 +1,13 @@
 
+## v1.0.0 (2019-11-29)
+
+#### :star: Features
+* [#5](https://github.com/kazupon/lerna-changelog-label-types/pull/5) Label type definition ([@kazupon](https://github.com/kazupon))
+
+#### Committers: 1
+- kazuya kawaguchi ([@kazupon](https://github.com/kazupon))
+
+
 ## v0.1.1 (2019-11-29)
 
 #### :bug: Bug Fix
