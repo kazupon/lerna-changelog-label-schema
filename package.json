@@ -43,6 +43,8 @@
     "url": "git+https://github.com/kazupon/lerna-changelog-label-types.git"
   },
   "scripts": {
+    "test": "echo test!",
+    "build": "echo build!",
     "release:prepare": "shipjs prepare",
     "release:trigger": "shipjs trigger"
   }
