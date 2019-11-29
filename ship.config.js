@@ -34,7 +34,7 @@ async function commitChangelog (current, next) {
 }
 
 module.exports = {
-  publishCommand: undefined,
+  publishCommand: () => { return 'echo publish!' },
   mergeStrategy: { toSameBranch: ['master'] },
   monorepo: undefined,
   updateChangelog: false,
