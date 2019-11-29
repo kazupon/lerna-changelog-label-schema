@@ -28,8 +28,12 @@
   },
   "devDependencies": {
     "lerna-changelog": "^0.8.3",
-    "shipjs": "^0.11.0"
+    "shipjs": "^0.11.0",
+    "typescript": "^3.7.2"
   },
+  "files": [
+    "lib"
+  ],
   "homepage": "https://github.com/kazupon/lerna-changelog-label-types#readme",
   "keywords": [
     "labels",
@@ -43,9 +47,10 @@
     "url": "git+https://github.com/kazupon/lerna-changelog-label-types.git"
   },
   "scripts": {
-    "test": "echo test!",
-    "build": "echo build!",
+    "build": "tsc -p .",
     "release:prepare": "shipjs prepare",
-    "release:trigger": "shipjs trigger"
+    "release:trigger": "shipjs trigger",
+    "test": "echo test!",
+    "watch": "tsc -p . --watch"
   }
 }
