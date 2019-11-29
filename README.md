@@ -16,12 +16,12 @@ Label type definition for lerna-changelog
 | `Type: Deprecated`    | **Deprecate** feature               |
 | `Type: I18n`          | **internationalization** issue      |
 | `Type: A11y`          | **accessibility** issue             |
+| `Type: Documentation` | **documentation** issue             |
 | `Type: Refactoring`   | **refactoring** issue               |
 | `Type: Testing`       | **test** issue                      |
-| `Type: Documentation` | **documentation** issue             |
+| `Type: Configuration` | **configuration**  issue            |
 | `Type: Example`       | **example** or **demo** issue       |
 | `Type: Dependency`    | **dependencies** issue              |
-| `Type: Configuration` | **configuration**  issue            |
 | `Type: Build`         | **packaging** or **bundling** issue |
 
 ## :copyright: License
