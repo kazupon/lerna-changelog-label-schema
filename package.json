@@ -27,6 +27,11 @@
     }
   },
   "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^2.9.0",
+    "@typescript-eslint/parser": "^2.9.0",
+    "@typescript-eslint/typescript-estree": "^2.9.0",
+    "eslint": "^6.7.1",
+    "eslint-plugin-vue-libs": "^4.0.0",
     "lerna-changelog": "^0.8.3",
     "shipjs": "^0.11.0",
     "typescript": "^3.7.2"
@@ -48,6 +53,7 @@
   },
   "scripts": {
     "build": "tsc -p .",
+    "lint": "eslint ./src --ext .ts",
     "release:prepare": "shipjs prepare",
     "release:trigger": "shipjs trigger",
     "test": "echo test!",
