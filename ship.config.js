@@ -26,8 +26,6 @@ async function commitChangelog (current, next) {
     'g'
   );
   const matches = regex.exec(stdout.toString())
-  console.log('stdout', stdout)
-  console.log('matches', matches)
   const head = matches ? matches[1] : stdout
   const changelog = await read('./CHANGELOG.md', 'utf8')
   return write('./CHANGELOG.md', `${head}\n\n${changelog}`)
