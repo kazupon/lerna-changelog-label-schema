@@ -1,7 +1,7 @@
 {
   "name": "lerna-changelog-label-types",
   "description": "Label type definition for lerna-changelog",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "author": {
     "name": "kazuya kawaguchi",
     "email": "kawakazu80@gmail.com"
