@@ -7,7 +7,10 @@
     "email": "kawakazu80@gmail.com"
   },
   "homepage": "https://github.com/kazupon/lerna-changelog-label-types#readme",
-  "keywords": ["labels", "lerna-changelog"],
+  "keywords": [
+    "labels",
+    "lerna-changelog"
+  ],
   "license": "MIT",
   "main": "null.js",
   "private": true,
@@ -20,6 +23,7 @@
     "release:trigger": "shipjs trigger"
   },
   "devDependencies": {
+    "lerna-changelog": "^0.8.3",
     "shipjs": "^0.11.0"
   }
 }
