@@ -22,7 +22,7 @@
       "Type: Documentation": ":pencil: Documentation",
       "Type: Example": ":lollipop: Example",
       "Type: Dependency": ":push_pin: Dependency",
-      "Type: Configration": ":wrench: Configration",
+      "Type: Configuration": ":wrench: Configuration",
       "Type: Build": ":package: Build"
     }
   },
