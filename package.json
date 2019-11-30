@@ -27,13 +27,17 @@
     }
   },
   "devDependencies": {
+    "@types/jest": "^24.0.23",
     "@typescript-eslint/eslint-plugin": "^2.9.0",
     "@typescript-eslint/parser": "^2.9.0",
     "@typescript-eslint/typescript-estree": "^2.9.0",
     "eslint": "^6.7.1",
     "eslint-plugin-vue-libs": "^4.0.0",
+    "jest": "^24.9.0",
     "lerna-changelog": "^0.8.3",
+    "opener": "^1.5.1",
     "shipjs": "^0.11.0",
+    "ts-jest": "^24.2.0",
     "typescript": "^3.7.2"
   },
   "files": [
@@ -53,10 +57,14 @@
   },
   "scripts": {
     "build": "tsc -p .",
+    "clean": "rm -rf ./coverage && rm -rf ./lib/*.js*",
+    "coverage": "opener coverage/lcov-report/index.html",
     "lint": "eslint ./src --ext .ts",
     "release:prepare": "shipjs prepare",
     "release:trigger": "shipjs trigger",
-    "test": "echo test!",
+    "test": "npm run lint && npm run test:cover",
+    "test:cover": "npm run test:unit -- --coverage",
+    "test:unit": "jest --env node",
     "watch": "tsc -p . --watch"
   }
 }
