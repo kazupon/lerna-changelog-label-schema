@@ -1,4 +1,19 @@
 
+## v1.1.1 (2019-12-02)
+
+#### :zap: Improvement Feature
+* [#16](https://github.com/kazupon/lerna-changelog-label-types/pull/16) fix chmod ([@kazupon](https://github.com/kazupon))
+
+#### :white_check_mark: Testing
+* [#14](https://github.com/kazupon/lerna-changelog-label-types/pull/14) circleci configration ([@kazupon](https://github.com/kazupon))
+
+#### :pencil: Documentation
+* [#15](https://github.com/kazupon/lerna-changelog-label-types/pull/15) tweak docs ([@kazupon](https://github.com/kazupon))
+
+#### Committers: 1
+- kazuya kawaguchi ([@kazupon](https://github.com/kazupon))
+
+
 ## v1.1.0 (2019-12-02)
 
 #### :star: Features
