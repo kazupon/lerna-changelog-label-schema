@@ -43,6 +43,7 @@
   },
   "bin": "bin/run.js",
   "files": [
+    "bin",
     "lib",
     "preset"
   ],
