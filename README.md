@@ -20,12 +20,12 @@ Label type definition for lerna-changelog
 | :globe_with_meridians:      | `Type: I18n`          |  :white_check_mark:             |  :white_check_mark:  | **internationalization** issue      |
 | :wheelchair:                | `Type: A11y`          |  :white_check_mark:             |  :white_check_mark:  | **accessibility** issue             |
 | :shirt:                     | `Type: Documentation` |  :white_check_mark:             |  :white_check_mark:  | **documentation** issue             |
-| :white_check_mark:          | `Type: Refactoring`   |  :negative_squared_cross_mark:  |  :white_check_mark:  | **refactoring** issue               |
-| :pencil:                    | `Type: Testing`       |  :negative_squared_cross_mark:  |  :white_check_mark:  | **test** issue                      |
-| :wrench:                    | `Type: Configuration` |  :negative_squared_cross_mark:  |  :white_check_mark:  | **configuration**  issue            |
-| :lollipop:                  | `Type: Example`       |  :negative_squared_cross_mark:  |  :white_check_mark:  | **example** or **demo** issue       |
-| :push_pin:                  | `Type: Dependency`    |  :negative_squared_cross_mark:  |  :white_check_mark:  | **dependencies** issue              |
-| :package:                   | `Type: Build`         |  :negative_squared_cross_mark:  |  :white_check_mark:  | **packaging** or **bundling** issue |
+| :white_check_mark:          | `Type: Refactoring`   |                                 |  :white_check_mark:  | **refactoring** issue               |
+| :pencil:                    | `Type: Testing`       |                                 |  :white_check_mark:  | **test** issue                      |
+| :wrench:                    | `Type: Configuration` |                                 |  :white_check_mark:  | **configuration**  issue            |
+| :lollipop:                  | `Type: Example`       |                                 |  :white_check_mark:  | **example** or **demo** issue       |
+| :pushpin:                   | `Type: Dependency`    |                                 |  :white_check_mark:  | **dependencies** issue              |
+| :package:                   | `Type: Build`         |                                 |  :white_check_mark:  | **packaging** or **bundling** issue |
 
 You can use the preset as `Default` or `Full`. In about setup, look up the following CLI section.
 
