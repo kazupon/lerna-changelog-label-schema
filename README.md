@@ -21,8 +21,8 @@ Label type definition for lerna-changelog
 | :wheelchair:                | `Type: A11y`          |  :white_check_mark:             |  :white_check_mark:  | **accessibility** issue             |
 | :pencil:                    | `Type: Documentation` |  :white_check_mark:             |  :white_check_mark:  | **documentation** issue             |
 | :shirt:                     | `Type: Refactoring`   |                                 |  :white_check_mark:  | **refactoring** issue               |
-| :shirtwhite_check_mark:     | `Type: Testing`       |                                 |  :white_check_mark:  | **test** issue                      |
-| :wrench:                    | `Type: Configuration` |                                 |  :white_check_mark:  | **configuration**  issue            |
+| :white_check_mark:          | `Type: Testing`       |                                 |  :white_check_mark:  | **test** issue                      |
+| :wrench:                    | `Type: Dev Env Ops`   |                                 |  :white_check_mark:  | **dev env ops**  issue (e.g. setup / tweak tools, config)           |
 | :lollipop:                  | `Type: Example`       |                                 |  :white_check_mark:  | **example** or **demo** issue       |
 | :pushpin:                   | `Type: Dependency`    |                                 |  :white_check_mark:  | **dependencies** issue              |
 | :package:                   | `Type: Build`         |                                 |  :white_check_mark:  | **packaging** or **bundling** issue |
