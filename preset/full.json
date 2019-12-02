@@ -13,6 +13,6 @@
   "Type: Documentation": ":pencil: Documentation",
   "Type: Example": ":lollipop: Example",
   "Type: Dependency": ":push_pin: Dependency",
-  "Type: Configuration": ":wrench: Configuration",
+  "Type: Ops": ":wrench: Dev Env Ops",
   "Type: Build": ":package: Build"
 }
