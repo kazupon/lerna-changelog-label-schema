@@ -6,7 +6,7 @@
 Label type definition for lerna-changelog
 
 
-## :scroll: Label Types
+## :notebook: Label Types
 
 | Emojis                      | Labels                | Default                         | Full                 | Description                         |
 |-----------------------------|-----------------------|---------------------------------|----------------------|-------------------------------------|
