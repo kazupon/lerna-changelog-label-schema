@@ -19,9 +19,9 @@ Label type definition for lerna-changelog
 | :warning:                   | `Type: Deprecated`    |  :white_check_mark:             |  :white_check_mark:  | **Deprecate** feature               |
 | :globe_with_meridians:      | `Type: I18n`          |  :white_check_mark:             |  :white_check_mark:  | **internationalization** issue      |
 | :wheelchair:                | `Type: A11y`          |  :white_check_mark:             |  :white_check_mark:  | **accessibility** issue             |
-| :shirt:                     | `Type: Documentation` |  :white_check_mark:             |  :white_check_mark:  | **documentation** issue             |
-| :white_check_mark:          | `Type: Refactoring`   |                                 |  :white_check_mark:  | **refactoring** issue               |
-| :pencil:                    | `Type: Testing`       |                                 |  :white_check_mark:  | **test** issue                      |
+| :pencil:                    | `Type: Documentation` |  :white_check_mark:             |  :white_check_mark:  | **documentation** issue             |
+| :shirt:                     | `Type: Refactoring`   |                                 |  :white_check_mark:  | **refactoring** issue               |
+| :shirtwhite_check_mark:     | `Type: Testing`       |                                 |  :white_check_mark:  | **test** issue                      |
 | :wrench:                    | `Type: Configuration` |                                 |  :white_check_mark:  | **configuration**  issue            |
 | :lollipop:                  | `Type: Example`       |                                 |  :white_check_mark:  | **example** or **demo** issue       |
 | :pushpin:                   | `Type: Dependency`    |                                 |  :white_check_mark:  | **dependencies** issue              |
