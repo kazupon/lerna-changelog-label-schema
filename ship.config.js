@@ -5,26 +5,26 @@ const path = require('path')
 const read = promisify(fs.readFile)
 const write = fs.writeFileSync
 
-function extractSpecificChangelog(changelog, version) {
+function extractSpecificChangelog (changelog, version) {
   if (!changelog) {
-    return null;
+    return null
   }
-  const escapedVersion = version.replace(/\./g, '\\.');
+  const escapedVersion = version.replace(/\./g, '\\.')
   const regex = new RegExp(
     `(#+?\\s\\[?v?${escapedVersion}\\]?[\\s\\S]*?)(#+?\\s\\[?v?\\d\\.\\d\\.\\d\\]?)`,
     'g'
-  );
-  const matches = regex.exec(changelog);
-  return matches ? matches[1] : null;
+  )
+  const matches = regex.exec(changelog)
+  return matches ? matches[1] : null
 }
 
 async function commitChangelog (current, next) {
   const { stdout } = await execa('npx', ['lerna-changelog', '--next-version', `v${next}`])
-  const escapedVersion = next.replace(/\./g, '\\.');
+  const escapedVersion = next.replace(/\./g, '\\.')
   const regex = new RegExp(
     `(#+?\\s\\[?v?${escapedVersion}\\]?[\\s\\S]*?)(#+?\\s\\[?v?\\d\\.\\d\\.\\d\\]?)`,
     'g'
-  );
+  )
   const matches = regex.exec(stdout.toString())
   const head = matches ? matches[1] : stdout
   const changelog = await read('./CHANGELOG.md', 'utf8')
@@ -32,7 +32,6 @@ async function commitChangelog (current, next) {
 }
 
 module.exports = {
-  publishCommand: () => { return 'echo publish!' },
   mergeStrategy: { toSameBranch: ['master'] },
   monorepo: undefined,
   updateChangelog: false,
