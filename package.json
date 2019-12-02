@@ -52,8 +52,7 @@
     "lerna-changelog"
   ],
   "license": "MIT",
-  "main": "null.js",
-  "private": true,
+  "main": "lib/cli.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/kazupon/lerna-changelog-label-types.git"
