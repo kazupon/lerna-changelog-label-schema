@@ -19,17 +19,33 @@
       "Type: A11y": ":wheelchair: Accessibility",
       "Type: Refactoring": ":shirt: Refactoring",
       "Type: Testing": ":white_check_mark: Testing",
-      "Type: Documentation": ":pencil: Documentation",
-      "Type: Example": ":lollipop: Example",
-      "Type: Dependency": ":push_pin: Dependency",
-      "Type: Configuration": ":wrench: Configuration",
-      "Type: Build": ":package: Build"
+      "Type: Documentation": ":pencil: Documentation"
     }
   },
-  "devDependencies": {
-    "lerna-changelog": "^0.8.3",
-    "shipjs": "^0.11.0"
+  "engines": {
+    "node": ">= 8"
   },
+  "devDependencies": {
+    "@types/jest": "^24.0.23",
+    "@types/meow": "^5.0.0",
+    "@types/node": "^12.12.14",
+    "@typescript-eslint/eslint-plugin": "^2.9.0",
+    "@typescript-eslint/parser": "^2.9.0",
+    "@typescript-eslint/typescript-estree": "^2.9.0",
+    "eslint": "^6.7.1",
+    "eslint-plugin-vue-libs": "^4.0.0",
+    "jest": "^24.9.0",
+    "lerna-changelog": "^0.8.3",
+    "opener": "^1.5.1",
+    "shipjs": "^0.11.0",
+    "ts-jest": "^24.2.0",
+    "typescript": "^3.7.2"
+  },
+  "bin": "bin/run.js",
+  "files": [
+    "lib",
+    "preset"
+  ],
   "homepage": "https://github.com/kazupon/lerna-changelog-label-types#readme",
   "keywords": [
     "labels",
@@ -43,9 +59,18 @@
     "url": "git+https://github.com/kazupon/lerna-changelog-label-types.git"
   },
   "scripts": {
-    "test": "echo test!",
-    "build": "echo build!",
+    "build": "tsc -p .",
+    "clean": "rm -rf ./coverage && rm -rf ./lib/*.js*",
+    "coverage": "opener coverage/lcov-report/index.html",
+    "lint": "eslint ./src --ext .ts",
     "release:prepare": "shipjs prepare",
-    "release:trigger": "shipjs trigger"
+    "release:trigger": "shipjs trigger",
+    "test": "npm run lint && npm run test:cover",
+    "test:cover": "npm run test:unit -- --coverage",
+    "test:unit": "jest --env node",
+    "watch": "tsc -p . --watch"
+  },
+  "dependencies": {
+    "meow": "^5.0.0"
   }
 }
