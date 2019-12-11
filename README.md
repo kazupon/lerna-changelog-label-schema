@@ -3,7 +3,7 @@
 [![npm](https://img.shields.io/npm/v/lerna-changelog-label-schema.svg)](https://www.npmjs.com/package/lerna-changelog-label-schema)
 [![CircleCI](https://circleci.com/gh/kazupon/lerna-changelog-label-schema.svg?style=svg)](https://circleci.com/gh/kazupon/lerna-changelog-label-schema)
 
-Label type definition for lerna-changelog
+Label schema definition for lerna-changelog
 
 
 ## :notebook: Label Schema
