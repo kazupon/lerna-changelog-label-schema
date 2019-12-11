@@ -1,4 +1,13 @@
 
+## v2.0.3 (2019-12-11)
+
+#### :zap: Improvement Feature
+* [#36](https://github.com/kazupon/lerna-changelog-label-schema/pull/36) update docs ([@kazupon](https://github.com/kazupon))
+
+#### Committers: 1
+- kazuya kawaguchi ([@kazupon](https://github.com/kazupon))
+
+
 ## v2.0.1 (2019-12-02)
 
 #### :pencil: Documentation
