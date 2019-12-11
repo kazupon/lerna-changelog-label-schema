@@ -38,12 +38,12 @@ You can setup lerna-changelog labels to `package.json` with CLI.
 
 npm:
 ```bash
-$ npm install -g lerna-changelog-lable-types
+$ npm install -g lerna-changelog-label-schema
 ```
 
 yarn:
 ```bash
-$ yarn global add lerna-changelog-lable-types
+$ yarn global add lerna-changelog-label-schema
 ```
 
 ### :rocket: Usages
@@ -51,7 +51,7 @@ $ yarn global add lerna-changelog-lable-types
 Run the following command in your repository:
 
 ```bash
-$ lerna-changelog-lable-types  
+$ lerna-changelog-label-schema
 apply lerna-changelog label preset 'default' to package.json
 ```
 
@@ -60,7 +60,7 @@ When labels is set successfully, a message is output.
 If you want to set all labels, specify `full` as `--preset` or `-p` argument.
 
 ```bash
-$ lerna-changelog-lable-types --preset=full
+$ lerna-changelog-label-schema --preset=full
 apply lerna-changelog label preset 'full' to package.json
 ```
 
