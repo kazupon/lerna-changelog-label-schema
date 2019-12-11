@@ -50,7 +50,7 @@
     "lib",
     "preset"
   ],
-  "homepage": "https://github.com/kazupon/lerna-changelog-label-types#readme",
+  "homepage": "https://github.com/kazupon/lerna-changelog-label-schema#readme",
   "keywords": [
     "labels",
     "lerna-changelog"
@@ -59,7 +59,7 @@
   "main": "lib/cli.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/kazupon/lerna-changelog-label-types.git"
+    "url": "git+https://github.com/kazupon/lerna-changelog-label-schema.git"
   },
   "scripts": {
     "build": "tsc -p .",

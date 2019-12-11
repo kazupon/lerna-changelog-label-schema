@@ -1,4 +1,4 @@
-# lerna-changelog-label-types Contributing Guide
+# lerna-changelog-label-schema Contributing Guide
 
 - [Issue Reporting Guidelines](#issue-reporting-guidelines)
 - [Pull Request Guidelines](#pull-request-guidelines)
@@ -10,7 +10,7 @@
 
 - Try to search for your issue, it may have already been answered or even fixed in the master branch.
 
-- Check if the issue is reproducible with the latest stable version of lerna-changelog-label-types. If you are using a pre-release, please indicate the specific version you are using.
+- Check if the issue is reproducible with the latest stable version of lerna-changelog-label-schema. If you are using a pre-release, please indicate the specific version you are using.
 
 - It is **required** that you clearly describe the steps necessary to reproduce the issue you are running into. Issues with no clear repro steps will not be triaged. If an issue labeled `Status: Need More Info` receives no further input from the issue author for more than 5 days, it will be closed.
 
@@ -35,12 +35,12 @@
   - Add appropriate test coverage if applicable.
 
 ### Work Step Example
-- Fork the repository from [kazupon/lerna-changelog-label-types](https://github.com/kazupon/lerna-changelog-label-types) !
+- Fork the repository from [kazupon/lerna-changelog-label-schema](https://github.com/kazupon/lerna-changelog-label-schema) !
 - Create your topic branch from `master`: `git branch my-new-topic origin/master`
 - Add codes and pass tests !
 - Commit your changes: `git commit -am 'Add some topic'`
 - Push to the branch: `git push origin my-new-topic`
-- Submit a pull request to `master` branch of `kazupon/lerna-changelog-label-types` repository !
+- Submit a pull request to `master` branch of `kazupon/lerna-changelog-label-schema` repository !
 
 ## Development Setup
 
