@@ -1,4 +1,13 @@
 
+## v2.0.1 (2019-12-02)
+
+#### :pencil: Documentation
+* [#28](https://github.com/kazupon/lerna-changelog-label-types/pull/28) tweak docs ([@kazupon](https://github.com/kazupon))
+
+#### Committers: 1
+- kazuya kawaguchi ([@kazupon](https://github.com/kazupon))
+
+
 ## v2.0.0 (2019-12-02)
 
 #### :zap: Improvement Feature
