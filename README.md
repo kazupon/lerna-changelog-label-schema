@@ -1,12 +1,12 @@
-# :label: lerna-changelog-label-types
+# :label: lerna-changelog-label-schema
 
-[![npm](https://img.shields.io/npm/v/lerna-changelog-label-types.svg)](https://www.npmjs.com/package/lerna-changelog-label-types)
-[![CircleCI](https://circleci.com/gh/kazupon/lerna-changelog-label-types.svg?style=svg)](https://circleci.com/gh/kazupon/lerna-changelog-label-types)
+[![npm](https://img.shields.io/npm/v/lerna-changelog-label-schema.svg)](https://www.npmjs.com/package/lerna-changelog-label-schema)
+[![CircleCI](https://circleci.com/gh/kazupon/lerna-changelog-label-schema.svg?style=svg)](https://circleci.com/gh/kazupon/lerna-changelog-label-schema)
 
 Label type definition for lerna-changelog
 
 
-## :notebook: Label Types
+## :notebook: Label Schema
 
 | Emojis                      | Labels                | Default                         | Full                 | Description                         |
 |-----------------------------|-----------------------|---------------------------------|----------------------|-------------------------------------|
@@ -66,7 +66,7 @@ apply lerna-changelog label preset 'full' to package.json
 
 
 ## :scroll: Changelog
-Details changes for each release are documented in the [CHANGELOG.md](https://github.com/kazupon/lerna-changelog-label-types/blob/master/CHANGELOG.md).
+Details changes for each release are documented in the [CHANGELOG.md](https://github.com/kazupon/lerna-changelog-label-schema/blob/master/CHANGELOG.md).
 
 
 ## :copyright: License
