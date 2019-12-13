@@ -5,9 +5,12 @@ const TARGET_PATH = '/path/to/project1'
 
 let orgCwd // for process.cwd mock
 
-// mock: ../src/commands/define
-jest.mock('../src/commands/define', () => jest.fn())
-import define from '../src/commands/define'
+// mock: ../src/commands
+jest.mock('../src/commands', () => ({
+  define: jest.fn(),
+  generate: jest.fn()
+}))
+import * as commands from '../src/commands'
 
 // -------------------
 // setup/teadown
@@ -30,8 +33,8 @@ afterEach(() => {
 
 test('define command', async () => {
   // setup mocks
-  const mockDefine = define as jest.MockedFunction<typeof define>
-  mockDefine.mockImplementation(options => Promise.resolve(true))
+  const { define } = commands as jest.Mocked<typeof commands>
+  define.mockImplementation(options => Promise.resolve(true))
 
   // run
   const { run } = await import('../src/cli')
@@ -39,9 +42,23 @@ test('define command', async () => {
 
   // verify
   expect(cli.flags).toMatchObject({ preset: 'full', p: 'full' })
-  expect(mockDefine).toHaveBeenCalledWith({ preset: 'full', cwd: TARGET_PATH })
+  expect(define).toHaveBeenCalledWith({ preset: 'full', cwd: TARGET_PATH })
 })
 
+test('generate command', async () => {
+  // setup mocks
+  const { generate } = commands as jest.Mocked<typeof commands>
+  generate.mockImplementation(options => Promise.resolve(true))
+
+  // run
+  const { run } = await import('../src/cli')
+  const cli = await run(['g', '--output=/path/to/preset.json'])
+
+  // verify
+  expect(cli.flags).toMatchObject({ preset: 'default', p: 'default', output: '/path/to/preset.json' })
+  expect(generate).toHaveBeenCalledWith({ preset: 'default', output: '/path/to/preset.json' })
+
+})
 
 test('version command', async () => {
   // run
