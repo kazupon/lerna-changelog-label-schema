@@ -49,8 +49,7 @@
   },
   "files": [
     "bin",
-    "lib",
-    "preset"
+    "lib"
   ],
   "homepage": "https://github.com/kazupon/lerna-changelog-label-schema#readme",
   "keywords": [
