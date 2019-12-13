@@ -12,12 +12,15 @@ import define from '../src/commands/define'
 // -------------------
 // setup/teadown
 
+let spyLog
 beforeEach(() => {
   orgCwd = process.cwd
   process.cwd = jest.fn(() => TARGET_PATH) // mock: process.cwd
+  spyLog = jest.spyOn(global.console, 'log')
 })
 
 afterEach(() => {
+  spyLog.mockRestore()
   jest.clearAllMocks()
   process.cwd = orgCwd
 })
@@ -25,7 +28,7 @@ afterEach(() => {
 // -------------------
 // tests
 
-test('define', async () => {
+test('define command', async () => {
   // setup mocks
   const mockDefine = define as jest.MockedFunction<typeof define>
   mockDefine.mockImplementation(options => Promise.resolve(true))
@@ -37,4 +40,14 @@ test('define', async () => {
   // verify
   expect(cli.flags).toMatchObject({ preset: 'full', p: 'full' })
   expect(mockDefine).toHaveBeenCalledWith({ preset: 'full', cwd: TARGET_PATH })
+})
+
+
+test('version command', async () => {
+  // run
+  const { run } = await import('../src/cli')
+  const cli = await run(['version'])
+
+  // verify
+  expect(spyLog).toHaveBeenCalledWith(cli.pkg.version)
 })

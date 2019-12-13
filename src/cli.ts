@@ -29,6 +29,7 @@ export async function run (argv: string[] = []) {
   
   Commands:
     define, d      define lerna-changelog labels in your package.json 
+    version, v     show the version
 
   Options:
     --preset, -p   Label schema preset option, for define and generate command. 'default' or 'full', default: 'default'
@@ -44,6 +45,8 @@ export async function run (argv: string[] = []) {
 
   if (['define', 'd'].includes(command)) { // define command
     await define({ preset, cwd: process.cwd() })
+  } else if (['version', 'v'].includes(command)) { // version command
+    console.log(cli.pkg.version)
   } else { // help!
     console.log(cli.help)
   }
