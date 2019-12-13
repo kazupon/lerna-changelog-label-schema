@@ -40,7 +40,7 @@ test('preset: default', async () => {
   expect(mockUtils.writeJSON).toHaveBeenCalledWith(`${cwd}/package.json`, {
     changelog: {
       labels: {
-        'Type: Feature': ':tada: Features',
+        'Type: Feature': ':star: Features',
         'Type: Bug': ':bug: Bug Fixes',
         'Type: Security': ':lock: Security Fixes',
         'Type: Performance': ':chart_with_upwards_trend: Performance Fixes',
@@ -71,7 +71,7 @@ test('preset: full', async () => {
   expect(mockUtils.writeJSON).toHaveBeenCalledWith(`${cwd}/package.json`, {
     changelog: {
       labels: {
-        'Type: Feature': ':tada: Features',
+        'Type: Feature': ':star: Features',
         'Type: Bug': ':bug: Bug Fixes',
         'Type: Security': ':lock: Security Fixes',
         'Type: Performance': ':chart_with_upwards_trend: Performance Fixes',

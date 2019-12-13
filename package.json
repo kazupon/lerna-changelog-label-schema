@@ -10,17 +10,21 @@
   "changelog": {
     "labels": {
       "Type: Feature": ":star: Features",
-      "Type: Bug": ":bug: Bug Fix",
-      "Type: Security": ":lock: Security Fix",
-      "Type: Performance": ":chart_with_upwards_trend: Performance Fix",
-      "Type: Improvement": ":zap: Improvement Feature",
+      "Type: Bug": ":bug: Bug Fixes",
+      "Type: Security": ":lock: Security Fixes",
+      "Type: Performance": ":chart_with_upwards_trend: Performance Fixes",
+      "Type: Improvement": ":zap: Improvement Features",
       "Type: Breaking": ":boom: Breaking Change",
-      "Type: Deprecated": ":warning: Deprecated Feature",
+      "Type: Deprecated": ":warning: Deprecated Features",
       "Type: I18n": ":globe_with_meridians: Internationalization",
       "Type: A11y": ":wheelchair: Accessibility",
+      "Type: Documentation": ":pencil: Documentation",
       "Type: Refactoring": ":shirt: Refactoring",
       "Type: Testing": ":white_check_mark: Testing",
-      "Type: Documentation": ":pencil: Documentation"
+      "Type: Maintenance": ":wrench: Maintenance",
+      "Type: Example": ":lollipop: Example or demo",
+      "Type: Dependency": ":pushpin: Dependency",
+      "Type: Build": ":package: Build"
     }
   },
   "dependencies": {
