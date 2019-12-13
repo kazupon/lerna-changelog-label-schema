@@ -51,3 +51,12 @@ test('version command', async () => {
   // verify
   expect(spyLog).toHaveBeenCalledWith(cli.pkg.version)
 })
+
+test('show help', async () => {
+  // run
+  const { run } = await import('../src/cli')
+  const cli = await run()
+
+  // verify
+  expect(spyLog.mock.calls[0][0]).toMatchSnapshot()
+})

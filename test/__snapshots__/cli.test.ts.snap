@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`show help 1`] = `
+"
+  Label schema definition for lerna-changelog
+
+  Usage
+    $ lerna-changelog-label-schema <command> [options]
+
+  Commands:
+    define, d      define lerna-changelog labels in your package.json 
+    version, v     show the version
+
+  Options:
+    --preset, -p   Label schema preset option, for define and generate command. 'default' or 'full', default: 'default'
+
+  Examples:
+    $ lerna-changelog-label-schema define --preset=full
+
+"
+`;
