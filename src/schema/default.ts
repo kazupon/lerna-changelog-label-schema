@@ -2,7 +2,7 @@ import { LernaChangelogLabel, GitHubLabelMeta } from '../../types'
 
 export const labels: LernaChangelogLabel[] = [{
   type: 'Feature',
-  emoji: ':tada:',
+  emoji: ':star:',
   caption: 'Features',
   description: 'Includes new features'
 }, {
