@@ -1,16 +1,14 @@
-import fs from 'fs'
-import path from 'path'
+import * as fs from 'fs'
 
-export function resolve (...paths: string[]): string {
-  return path.resolve(...paths)
+export async function readJSON (path: string) {
+  return await import(path) as JSON
 }
 
-export function readJSON (path: string): any {
-  const raw = fs.readFileSync(path, 'utf-8').toString()
-  return JSON.parse(raw)
-}
-
-export function writeJSON (path: string, json: any): void {
+export async function writeJSON (path: string, json: any) {
   const data = JSON.stringify(json, null, 2)
-  fs.writeFileSync(path, data)
+  return new Promise((resolve, reject) => {
+    fs.writeFile(path, data, err => {
+      err ? reject(err) : resolve()
+    })
+  })
 }

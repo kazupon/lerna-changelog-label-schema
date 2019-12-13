@@ -8,26 +8,26 @@ Label schema definition for lerna-changelog
 
 ## :notebook: Label Schema
 
-| Emojis                      | Labels                | Default                         | Full                 | Description                         |
-|-----------------------------|-----------------------|---------------------------------|----------------------|-------------------------------------|
-| :star:                      | `Type: Feature`       |  :white_check_mark:             |  :white_check_mark:  | **new feature** issue               |
-| :bug:                       | `Type: Bug`           |  :white_check_mark:             |  :white_check_mark:  | **bug** issue                       |
-| :lock:                      | `Type: Security`      |  :white_check_mark:             |  :white_check_mark:  | **security** issue                  |
-| :chart_with_upwards_trend:  | `Type: Performance`   |  :white_check_mark:             |  :white_check_mark:  | **performance** issue               |
-| :zap:                       | `Type: Improvement`   |  :white_check_mark:             |  :white_check_mark:  | **backwards-compatible** feature    |
-| :boom:                      | `Type: Breaking`      |  :white_check_mark:             |  :white_check_mark:  | **backwards-incompatible** feature  |
-| :warning:                   | `Type: Deprecated`    |  :white_check_mark:             |  :white_check_mark:  | **Deprecate** feature               |
-| :globe_with_meridians:      | `Type: I18n`          |  :white_check_mark:             |  :white_check_mark:  | **internationalization** issue      |
-| :wheelchair:                | `Type: A11y`          |  :white_check_mark:             |  :white_check_mark:  | **accessibility** issue             |
-| :pencil:                    | `Type: Documentation` |  :white_check_mark:             |  :white_check_mark:  | **documentation** issue             |
-| :shirt:                     | `Type: Refactoring`   |                                 |  :white_check_mark:  | **refactoring** issue               |
-| :white_check_mark:          | `Type: Testing`       |                                 |  :white_check_mark:  | **test** issue                      |
-| :wrench:                    | `Type: Dev Env Ops`   |                                 |  :white_check_mark:  | **dev env ops**  issue              |
-| :lollipop:                  | `Type: Example`       |                                 |  :white_check_mark:  | **example** or **demo** issue       |
-| :pushpin:                   | `Type: Dependency`    |                                 |  :white_check_mark:  | **dependencies** issue              |
-| :package:                   | `Type: Build`         |                                 |  :white_check_mark:  | **packaging** or **bundling** issue |
+| Emojis                      | Category      | Label Display         | Preset: default      | Preset: full         | Description                                               |
+|-----------------------------|---------------|-----------------------|----------------------|----------------------|-----------------------------------------------------------|
+| :star:                      | Feature       | `Type: Feature`       |  :white_check_mark:  |  :white_check_mark:  | Includes new features                                     |
+| :bug:                       | Bug           | `Type: Bug`           |  :white_check_mark:  |  :white_check_mark:  | Bug or Bug fixes                                          |
+| :lock:                      | Security      | `Type: Security`      |  :white_check_mark:  |  :white_check_mark:  | Security fixes                                            |
+| :chart_with_upwards_trend:  | Performance   | `Type: Performance`   |  :white_check_mark:  |  :white_check_mark:  | Includes performance fixes                                |
+| :zap:                       | Improvement   | `Type: Improvement`   |  :white_check_mark:  |  :white_check_mark:  | Includes backwards-compatible fixes                       |
+| :boom:                      | Breaking      | `Type: Breaking`      |  :white_check_mark:  |  :white_check_mark:  | Includes backwards-incompatible fixes                     |
+| :warning:                   | Deprecated    | `Type: Deprecated`    |  :white_check_mark:  |  :white_check_mark:  | Includes deprecate fixes                                  |
+| :globe_with_meridians:      | I18n          | `Type: I18n`          |  :white_check_mark:  |  :white_check_mark:  | An internationalization fixes                             |
+| :wheelchair:                | A11y          | `Type: A11y`          |  :white_check_mark:  |  :white_check_mark:  | An accessibility fixes                                    |
+| :pencil:                    | Documentation | `Type: Documentation` |  :white_check_mark:  |  :white_check_mark:  | A documetation fixes                                      |
+| :shirt:                     | Refactoring   | `Type: Refactoring`   |                      |  :white_check_mark:  | A code change that neither fixes a bug nor adds a feature |
+| :white_check_mark:          | Testing       | `Type: Testing`       |                      |  :white_check_mark:  | Adding missing tests or correcting existing tests         |
+| :wrench:                    | Maintenance   | `Type: Maintenance`   |                      |  :white_check_mark:  | Repository Maintenance                                    |
+| :lollipop:                  | Example       | `Type: Example`       |                      |  :white_check_mark:  | Includes example and demo code fixes                      |
+| :pushpin:                   | Dependency    | `Type: Dependency`    |                      |  :white_check_mark:  | Dependencies fixes                                        |
+| :package:                   | Build         | `Type: Build`         |                      |  :white_check_mark:  | A packaging or a building fixes                           |
 
-You can use the preset as `Default` or `Full`. In about setup, look up the following CLI section.
+You can use the preset as `default` or `full`. In about setup, look up the following CLI section.
 
 
 ## :star: CLI
