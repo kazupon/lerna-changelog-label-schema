@@ -58,7 +58,7 @@
     "lerna-changelog"
   ],
   "license": "MIT",
-  "main": "lib/cli.js",
+  "main": "lib/index.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/kazupon/lerna-changelog-label-schema.git"
