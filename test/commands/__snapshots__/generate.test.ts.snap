@@ -1,0 +1,375 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`output: success 1`] = `
+Array [
+  Object {
+    "aliases": Array [
+      "features",
+      "enhancement",
+    ],
+    "color": "ffff00",
+    "description": "Includes new features",
+    "name": "Type: Feature",
+  },
+  Object {
+    "aliases": Array [
+      "bug",
+    ],
+    "color": "ee0701",
+    "description": "Bug or Bug fixes",
+    "name": "Type: Bug",
+  },
+  Object {
+    "aliases": Array [
+      "vulnerability",
+      "vulnerabilities",
+    ],
+    "color": "b60205",
+    "description": "Security fixes",
+    "name": "Type: Security",
+  },
+  Object {
+    "aliases": Array [
+      "perf",
+      "perform",
+    ],
+    "color": "cc317c",
+    "description": "Includes performance fixes",
+    "name": "Type: Performance",
+  },
+  Object {
+    "aliases": Array [],
+    "color": "1d76db",
+    "description": "Includes backwards-compatible fixes",
+    "name": "Type: Improvement",
+  },
+  Object {
+    "aliases": Array [
+      "breaking",
+      "breaking-change",
+    ],
+    "color": "b60205",
+    "description": "Includes backwards-incompatible fixes",
+    "name": "Type: Breaking",
+  },
+  Object {
+    "aliases": Array [
+      "deprecated",
+    ],
+    "color": "f7ffa8",
+    "description": "Includes deprecate fixes",
+    "name": "Type: Deprecated",
+  },
+  Object {
+    "aliases": Array [
+      "internationalization",
+      "i18n",
+    ],
+    "color": "ffd412",
+    "description": "An internationalization fixes",
+    "name": "Type: I18n",
+  },
+  Object {
+    "aliases": Array [
+      "accessibility",
+      "a11y",
+    ],
+    "color": "0000ff",
+    "description": "An accessibility fixes",
+    "name": "Type: A11y",
+  },
+  Object {
+    "aliases": Array [
+      "documents",
+      "document",
+    ],
+    "color": "5319e7",
+    "description": "A documetation fixes",
+    "name": "Type: Documentation",
+  },
+  Object {
+    "aliases": Array [
+      "refactor",
+      "refactoring",
+    ],
+    "color": "fbca04",
+    "description": "A code change that neither fixes a bug nor adds a feature",
+    "name": "Type: Refactoring",
+  },
+  Object {
+    "aliases": Array [
+      "test",
+      "testing",
+    ],
+    "color": "0e8a16",
+    "description": "Adding missing tests or correcting existing tests",
+    "name": "Type: Testing",
+  },
+  Object {
+    "aliases": Array [
+      "greenkeeper",
+      "maintenance",
+    ],
+    "color": "e5ef7a",
+    "description": "Repository Maintenance",
+    "name": "Type: Maintenance",
+  },
+  Object {
+    "aliases": Array [
+      "sample",
+      "examples",
+    ],
+    "color": "db0875",
+    "description": "Includes example and demo code fixes",
+    "name": "Type: Example",
+  },
+  Object {
+    "aliases": Array [
+      "dependencies",
+    ],
+    "color": "ffbce7",
+    "description": "Dependencies fixes",
+    "name": "Type: Dependency",
+  },
+  Object {
+    "aliases": Array [
+      "building",
+    ],
+    "color": "5319e7",
+    "description": "A packaging or a building fixes",
+    "name": "Type: Build",
+  },
+]
+`;
+
+exports[`preset: default 1`] = `
+"[
+  {
+    \\"name\\": \\"Type: Feature\\",
+    \\"color\\": \\"ffff00\\",
+    \\"description\\": \\"Includes new features\\",
+    \\"aliases\\": [
+      \\"features\\",
+      \\"enhancement\\"
+    ]
+  },
+  {
+    \\"name\\": \\"Type: Bug\\",
+    \\"color\\": \\"ee0701\\",
+    \\"description\\": \\"Bug or Bug fixes\\",
+    \\"aliases\\": [
+      \\"bug\\"
+    ]
+  },
+  {
+    \\"name\\": \\"Type: Security\\",
+    \\"color\\": \\"b60205\\",
+    \\"description\\": \\"Security fixes\\",
+    \\"aliases\\": [
+      \\"vulnerability\\",
+      \\"vulnerabilities\\"
+    ]
+  },
+  {
+    \\"name\\": \\"Type: Performance\\",
+    \\"color\\": \\"cc317c\\",
+    \\"description\\": \\"Includes performance fixes\\",
+    \\"aliases\\": [
+      \\"perf\\",
+      \\"perform\\"
+    ]
+  },
+  {
+    \\"name\\": \\"Type: Improvement\\",
+    \\"color\\": \\"1d76db\\",
+    \\"description\\": \\"Includes backwards-compatible fixes\\",
+    \\"aliases\\": []
+  },
+  {
+    \\"name\\": \\"Type: Breaking\\",
+    \\"color\\": \\"b60205\\",
+    \\"description\\": \\"Includes backwards-incompatible fixes\\",
+    \\"aliases\\": [
+      \\"breaking\\",
+      \\"breaking-change\\"
+    ]
+  },
+  {
+    \\"name\\": \\"Type: Deprecated\\",
+    \\"color\\": \\"f7ffa8\\",
+    \\"description\\": \\"Includes deprecate fixes\\",
+    \\"aliases\\": [
+      \\"deprecated\\"
+    ]
+  },
+  {
+    \\"name\\": \\"Type: I18n\\",
+    \\"color\\": \\"ffd412\\",
+    \\"description\\": \\"An internationalization fixes\\",
+    \\"aliases\\": [
+      \\"internationalization\\",
+      \\"i18n\\"
+    ]
+  },
+  {
+    \\"name\\": \\"Type: A11y\\",
+    \\"color\\": \\"0000ff\\",
+    \\"description\\": \\"An accessibility fixes\\",
+    \\"aliases\\": [
+      \\"accessibility\\",
+      \\"a11y\\"
+    ]
+  },
+  {
+    \\"name\\": \\"Type: Documentation\\",
+    \\"color\\": \\"5319e7\\",
+    \\"description\\": \\"A documetation fixes\\",
+    \\"aliases\\": [
+      \\"documents\\",
+      \\"document\\"
+    ]
+  }
+]"
+`;
+
+exports[`preset: full 1`] = `
+"[
+  {
+    \\"name\\": \\"Type: Feature\\",
+    \\"color\\": \\"ffff00\\",
+    \\"description\\": \\"Includes new features\\",
+    \\"aliases\\": [
+      \\"features\\",
+      \\"enhancement\\"
+    ]
+  },
+  {
+    \\"name\\": \\"Type: Bug\\",
+    \\"color\\": \\"ee0701\\",
+    \\"description\\": \\"Bug or Bug fixes\\",
+    \\"aliases\\": [
+      \\"bug\\"
+    ]
+  },
+  {
+    \\"name\\": \\"Type: Security\\",
+    \\"color\\": \\"b60205\\",
+    \\"description\\": \\"Security fixes\\",
+    \\"aliases\\": [
+      \\"vulnerability\\",
+      \\"vulnerabilities\\"
+    ]
+  },
+  {
+    \\"name\\": \\"Type: Performance\\",
+    \\"color\\": \\"cc317c\\",
+    \\"description\\": \\"Includes performance fixes\\",
+    \\"aliases\\": [
+      \\"perf\\",
+      \\"perform\\"
+    ]
+  },
+  {
+    \\"name\\": \\"Type: Improvement\\",
+    \\"color\\": \\"1d76db\\",
+    \\"description\\": \\"Includes backwards-compatible fixes\\",
+    \\"aliases\\": []
+  },
+  {
+    \\"name\\": \\"Type: Breaking\\",
+    \\"color\\": \\"b60205\\",
+    \\"description\\": \\"Includes backwards-incompatible fixes\\",
+    \\"aliases\\": [
+      \\"breaking\\",
+      \\"breaking-change\\"
+    ]
+  },
+  {
+    \\"name\\": \\"Type: Deprecated\\",
+    \\"color\\": \\"f7ffa8\\",
+    \\"description\\": \\"Includes deprecate fixes\\",
+    \\"aliases\\": [
+      \\"deprecated\\"
+    ]
+  },
+  {
+    \\"name\\": \\"Type: I18n\\",
+    \\"color\\": \\"ffd412\\",
+    \\"description\\": \\"An internationalization fixes\\",
+    \\"aliases\\": [
+      \\"internationalization\\",
+      \\"i18n\\"
+    ]
+  },
+  {
+    \\"name\\": \\"Type: A11y\\",
+    \\"color\\": \\"0000ff\\",
+    \\"description\\": \\"An accessibility fixes\\",
+    \\"aliases\\": [
+      \\"accessibility\\",
+      \\"a11y\\"
+    ]
+  },
+  {
+    \\"name\\": \\"Type: Documentation\\",
+    \\"color\\": \\"5319e7\\",
+    \\"description\\": \\"A documetation fixes\\",
+    \\"aliases\\": [
+      \\"documents\\",
+      \\"document\\"
+    ]
+  },
+  {
+    \\"name\\": \\"Type: Refactoring\\",
+    \\"color\\": \\"fbca04\\",
+    \\"description\\": \\"A code change that neither fixes a bug nor adds a feature\\",
+    \\"aliases\\": [
+      \\"refactor\\",
+      \\"refactoring\\"
+    ]
+  },
+  {
+    \\"name\\": \\"Type: Testing\\",
+    \\"color\\": \\"0e8a16\\",
+    \\"description\\": \\"Adding missing tests or correcting existing tests\\",
+    \\"aliases\\": [
+      \\"test\\",
+      \\"testing\\"
+    ]
+  },
+  {
+    \\"name\\": \\"Type: Maintenance\\",
+    \\"color\\": \\"e5ef7a\\",
+    \\"description\\": \\"Repository Maintenance\\",
+    \\"aliases\\": [
+      \\"greenkeeper\\",
+      \\"maintenance\\"
+    ]
+  },
+  {
+    \\"name\\": \\"Type: Example\\",
+    \\"color\\": \\"db0875\\",
+    \\"description\\": \\"Includes example and demo code fixes\\",
+    \\"aliases\\": [
+      \\"sample\\",
+      \\"examples\\"
+    ]
+  },
+  {
+    \\"name\\": \\"Type: Dependency\\",
+    \\"color\\": \\"ffbce7\\",
+    \\"description\\": \\"Dependencies fixes\\",
+    \\"aliases\\": [
+      \\"dependencies\\"
+    ]
+  },
+  {
+    \\"name\\": \\"Type: Build\\",
+    \\"color\\": \\"5319e7\\",
+    \\"description\\": \\"A packaging or a building fixes\\",
+    \\"aliases\\": [
+      \\"building\\"
+    ]
+  }
+]"
+`;

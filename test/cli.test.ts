@@ -1,37 +1,29 @@
-import defaultPreset from '../preset/default.json'
-import fullPreset from '../preset/full.json'
-
 // -------
 // mocking
 
 const TARGET_PATH = '/path/to/project1'
-const JSON_FILES = {
-  '../preset/default.json':  defaultPreset,
-  '../preset/full.json':  fullPreset,
-  './package.json':  {}
-}
 
 let orgCwd // for process.cwd mock
 
-// mock: ../src/utils
-jest.mock('../src/utils', () => ({
-  __esModule: true,
-  ...jest.requireActual('../src/utils'),
-  resolve: jest.fn(),
-  readJSON: jest.fn(),
-  writeJSON: jest.fn()
+// mock: ../src/commands
+jest.mock('../src/commands', () => ({
+  define: jest.fn(),
+  generate: jest.fn()
 }))
-import * as utils from '../src/utils'
+import * as commands from '../src/commands'
 
 // -------------------
 // setup/teadown
 
+let spyLog
 beforeEach(() => {
   orgCwd = process.cwd
   process.cwd = jest.fn(() => TARGET_PATH) // mock: process.cwd
+  spyLog = jest.spyOn(global.console, 'log')
 })
 
 afterEach(() => {
+  spyLog.mockRestore()
   jest.clearAllMocks()
   process.cwd = orgCwd
 })
@@ -39,58 +31,49 @@ afterEach(() => {
 // -------------------
 // tests
 
-test('default', async () => {
+test('define command', async () => {
   // setup mocks
-  // process.argv = ['/path/to/node', 'cli']
-  //await mockArgv()
-  const mockUtils = utils as jest.Mocked<typeof utils>
-  mockUtils.resolve.mockImplementation((...paths) => paths[1])
-  mockUtils.readJSON.mockImplementation(path => JSON_FILES[path])
-  const writeFiles = {}
-  mockUtils.writeJSON.mockImplementation((path, json) => {
-    writeFiles[path as string] = json
-  })
+  const { define } = commands as jest.Mocked<typeof commands>
+  define.mockImplementation(options => Promise.resolve(true))
 
   // run
   const { run } = await import('../src/cli')
-  const cli = run()
+  const cli = await run(['define', '--preset=full'])
 
-  // checking
-  expect(cli.flags).toMatchObject({
-    preset: 'default',
-    p: 'default'
-  })
-  expect(writeFiles['./package.json']).toMatchObject({
-    changelog: {
-      labels: defaultPreset
-    }
-  })
+  // verify
+  expect(cli.flags).toMatchObject({ preset: 'full', p: 'full' })
+  expect(define).toHaveBeenCalledWith({ preset: 'full', cwd: TARGET_PATH })
 })
 
-test('full', async () => {
+test('generate command', async () => {
   // setup mocks
-  // process.argv = ['/path/to/node', 'cli', '--preset=full']
-  // await mockArgv(['--preset=full'])
-  const mockUtils = utils as jest.Mocked<typeof utils>
-  mockUtils.resolve.mockImplementation((...paths) => paths[1])
-  mockUtils.readJSON.mockImplementation(path => JSON_FILES[path])
-  const writeFiles = {}
-  mockUtils.writeJSON.mockImplementation((path, json) => {
-    writeFiles[path as string] = json
-  })
+  const { generate } = commands as jest.Mocked<typeof commands>
+  generate.mockImplementation(options => Promise.resolve(true))
 
   // run
   const { run } = await import('../src/cli')
-  const cli = run(['--preset=full'])
+  const cli = await run(['g', '--output=/path/to/preset.json'])
 
-  // checking
-  expect(cli.flags).toMatchObject({
-    preset: 'full',
-    p: 'full'
-  })
-  expect(writeFiles['./package.json']).toMatchObject({
-    changelog: {
-      labels: fullPreset
-    }
-  })
+  // verify
+  expect(cli.flags).toMatchObject({ preset: 'default', p: 'default', output: '/path/to/preset.json' })
+  expect(generate).toHaveBeenCalledWith({ preset: 'default', output: '/path/to/preset.json' })
+
+})
+
+test('version command', async () => {
+  // run
+  const { run } = await import('../src/cli')
+  const cli = await run(['version'])
+
+  // verify
+  expect(spyLog).toHaveBeenCalledWith(cli.pkg.version)
+})
+
+test('show help', async () => {
+  // run
+  const { run } = await import('../src/cli')
+  const cli = await run()
+
+  // verify
+  expect(spyLog.mock.calls[0][0]).toMatchSnapshot()
 })

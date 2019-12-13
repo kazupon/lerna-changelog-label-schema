@@ -1,7 +1,5 @@
 coverage
 node_modules
-commands
-types
 .DS_Store
 *.log
 *.swp
