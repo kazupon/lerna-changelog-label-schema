@@ -48,20 +48,33 @@ $ yarn global add lerna-changelog-label-schema
 
 ### :rocket: Usages
 
-Run the following command in your repository:
-
 ```bash
-$ lerna-changelog-label-schema
-apply lerna-changelog label preset 'default' to package.json
+
+  Label schema definition for lerna-changelog
+
+  Usage
+    $ lerna-changelog-label-schema <command> [options]
+
+  Commands:
+    define, d      define lerna-changelog labels in your package.json 
+    generate, g    generate lerna-changelog labels for GitHub labels, output for stdout
+    version, v     show the version
+
+  Options:
+    --preset, -p   Label schema preset option, for define and generate command. 'default' or 'full', default: 'default'
+    --output, -o   Output option, for generate command. if specified, stdout is suppressed.
+
+  Examples:
+    $ lerna-changelog-label-schema define --preset=full
+    $ lerna-changelog-label-schema generate --preset=default
 ```
 
-When labels is set successfully, a message is output.
-
-If you want to set all labels, specify `full` as `--preset` or `-p` argument.
+e.g. `define` command
 
 ```bash
-$ lerna-changelog-label-schema --preset=full
-apply lerna-changelog label preset 'full' to package.json
+$ cd /path/to/project
+$ lerna-changelog-label-schema define --preset=full
+apply lerna-changelog label schema 'full' to package.json
 ```
 
 
