@@ -1,4 +1,19 @@
 
+## v3.0.0 (2019-12-13)
+
+#### :star: Features
+* [#38](https://github.com/kazupon/lerna-changelog-label-schema/pull/38) feat: lernal changelog label schema  ([@kazupon](https://github.com/kazupon))
+
+#### :boom: Breaking Change
+* [#38](https://github.com/kazupon/lerna-changelog-label-schema/pull/38) feat: lernal changelog label schema  ([@kazupon](https://github.com/kazupon))
+
+#### :pencil: Documentation
+* [#40](https://github.com/kazupon/lerna-changelog-label-schema/pull/40) update readme ([@kazupon](https://github.com/kazupon))
+
+#### Committers: 1
+- kazuya kawaguchi ([@kazupon](https://github.com/kazupon))
+
+
 ## v2.0.3 (2019-12-11)
 
 #### :zap: Improvement Feature
