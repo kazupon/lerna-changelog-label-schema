@@ -2617,10 +2617,10 @@ ini@^1.3.2, ini@~1.3.0:
   resolved "https://registry.yarnpkg.com/ini/-/ini-1.3.5.tgz#eee25f56db1c9ec6085e0c22778083f596abf927"
   integrity sha512-RZY5huIKCMRWDUqZlEi72f/lmXKMvuszcMBduliQ3nnWbx9X/ZBQO7DijMEYS9EhHBb2qacRUMtC7svLwe0lcw==
 
-inquirer@7.0.1:
-  version "7.0.1"
-  resolved "https://registry.yarnpkg.com/inquirer/-/inquirer-7.0.1.tgz#13f7980eedc73c689feff3994b109c4e799c6ebb"
-  integrity sha512-V1FFQ3TIO15det8PijPLFR9M9baSlnRs9nL7zWu1MNVA2T9YVl9ZbrHJhYs7e9X8jeMZ3lr2JH/rdHFgNCBdYw==
+inquirer@7.0.3:
+  version "7.0.3"
+  resolved "https://registry.yarnpkg.com/inquirer/-/inquirer-7.0.3.tgz#f9b4cd2dff58b9f73e8d43759436ace15bed4567"
+  integrity sha512-+OiOVeVydu4hnCGLCSX+wedovR/Yzskv9BFqUNNKq9uU2qg7LCcCo3R86S2E7WLo0y/x2pnEZfZe1CoYnORUAw==
   dependencies:
     ansi-escapes "^4.2.1"
     chalk "^2.4.2"
@@ -5028,10 +5028,10 @@ shellwords@^0.1.1:
   resolved "https://registry.yarnpkg.com/shellwords/-/shellwords-0.1.1.tgz#d6b9181c1a48d397324c84871efbcfc73fc0654b"
   integrity sha512-vFwSUfQvqybiICwZY5+DAWIPLKsWO31Q91JSKl3UYv+K5c2QRPzn0qzec6QPu1Qc9eHYItiP3NdJqNVqetYAww==
 
-shipjs-lib@0.13.0:
-  version "0.13.0"
-  resolved "https://registry.yarnpkg.com/shipjs-lib/-/shipjs-lib-0.13.0.tgz#dd43221077c43ca036c1d0863172f5e40864f6a1"
-  integrity sha512-cFzfHTPL/ayXA/So+wzLcejcF2vpC6aPx/5IoOfMiMYlsqQvZ1pXuyE61Ss/ISWkGnf0AYrNuMZ11FcS/K98Zg==
+shipjs-lib@0.14.0:
+  version "0.14.0"
+  resolved "https://registry.yarnpkg.com/shipjs-lib/-/shipjs-lib-0.14.0.tgz#3c06bb520bc1c8074d617ff97d8488ae71257c00"
+  integrity sha512-3knIgkIMQLRLRdfryL2mPwnnOENAOG+3ooHajclA4fPYzVfZsBriNrf9/n1ejWv7ZYayUXMlvon/NawjxmJOPA==
   dependencies:
     deepmerge "^4.2.2"
     dotenv "^8.1.0"
@@ -5039,10 +5039,10 @@ shipjs-lib@0.13.0:
     semver "6.3.0"
     shelljs "0.8.3"
 
-shipjs@^0.13.0:
-  version "0.13.0"
-  resolved "https://registry.yarnpkg.com/shipjs/-/shipjs-0.13.0.tgz#f1fa6731c06dac8d4a8bdffa15cb3f53170f572c"
-  integrity sha512-zp+Mn29WGapP3ZBWduW4SUGxZFCATMwmLEMZ77tQ61ka+EI9vXLUPZC2jA+9LTBRJ/+DPpkoPrwhiN0TW+v1lg==
+shipjs@^0.14.0:
+  version "0.14.0"
+  resolved "https://registry.yarnpkg.com/shipjs/-/shipjs-0.14.0.tgz#acd094feed177d02b94786b132cf8bbabb971966"
+  integrity sha512-nyyEfW+DXDYowhKM0hxh99Y4Uew1CWDqOuIweQtDGnNYb+dXSjyeqD7uwjaqXZ22T5miMMUOeVZQiYiB03O0VA==
   dependencies:
     "@babel/runtime" "^7.6.3"
     "@octokit/rest" "^16.35.0"
@@ -5056,14 +5056,14 @@ shipjs@^0.13.0:
     ejs "^3.0.0"
     esm "3.2.25"
     globby "^10.0.1"
-    inquirer "7.0.1"
+    inquirer "7.0.3"
     mime-types "^2.1.25"
     mkdirp "^0.5.1"
     open "^7.0.0"
     prettier "^1.18.2"
     serialize-javascript "^2.1.0"
     shell-quote "^1.7.2"
-    shipjs-lib "0.13.0"
+    shipjs-lib "0.14.0"
     temp-write "4.0.0"
     tempfile "^3.0.0"
 
