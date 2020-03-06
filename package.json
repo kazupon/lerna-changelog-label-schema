@@ -44,7 +44,7 @@
     "jest": "^25.0.0",
     "lerna-changelog": "^1.0.0",
     "opener": "^1.5.1",
-    "shipjs": "^0.16.0",
+    "shipjs": "^0.17.0",
     "ts-jest": "^25.0.0",
     "typescript": "^3.7.2"
   },
