@@ -1,7 +1,7 @@
 {
   "name": "lerna-changelog-label-schema",
   "description": "Label schema definition for lerna-changelog",
-  "version": "3.0.0",
+  "version": "4.0.0",
   "author": {
     "name": "kazuya kawaguchi",
     "email": "kawakazu80@gmail.com"
