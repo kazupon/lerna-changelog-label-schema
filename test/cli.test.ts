@@ -41,7 +41,7 @@ test('define command', async () => {
   const cli = await run(['define', '--preset=full'])
 
   // verify
-  expect(cli.flags).toMatchObject({ preset: 'full', p: 'full' })
+  expect(cli.flags).toMatchObject({ preset: 'full' })
   expect(define).toHaveBeenCalledWith({ preset: 'full', cwd: TARGET_PATH })
 })
 
@@ -55,7 +55,7 @@ test('generate command', async () => {
   const cli = await run(['g', '--output=/path/to/preset.json'])
 
   // verify
-  expect(cli.flags).toMatchObject({ preset: 'default', p: 'default', output: '/path/to/preset.json' })
+  expect(cli.flags).toMatchObject({ preset: 'default', output: '/path/to/preset.json' })
   expect(generate).toHaveBeenCalledWith({ preset: 'default', output: '/path/to/preset.json' })
 
 })

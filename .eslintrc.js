@@ -18,7 +18,5 @@ module.exports = {
     sourceType: 'module'
   },
   rules: {
-    'no-unused-vars': 'off', // HACK: due to override with @typescript-eslint/no-unused-vars
-    '@typescript-eslint/no-unused-vars': [2, { 'vars': 'all', 'args': 'none' }]
   }
 }

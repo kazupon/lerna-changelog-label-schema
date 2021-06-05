@@ -5,7 +5,7 @@ import { debug as Debug } from 'debug'
 const debug = Debug('lerna-changelog-label-schema:cli')
 
 export async function run (argv: string[] = []) {
-  const options: meow.Options = {
+  const options = {
     flags: {
       preset: {
         type: 'string',
@@ -17,9 +17,10 @@ export async function run (argv: string[] = []) {
         alias: 'o'
       }
     }
-  }
+  } as const
 
   if (argv.length > 0) {
+    // @ts-ignore
     options.argv = argv
   }
 

@@ -8,7 +8,7 @@ export async function writeJSON (path: string, json: any) {
   const data = JSON.stringify(json, null, 2)
   return new Promise((resolve, reject) => {
     fs.writeFile(path, data, err => {
-      err ? reject(err) : resolve()
+      err ? reject(err) : resolve(true)
     })
   })
 }

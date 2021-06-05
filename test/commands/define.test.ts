@@ -13,7 +13,8 @@ import * as utils from '../../src/utils'
 // -------------------
 // setup/teadown hooks
 
-let spyLog
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+let spyLog: any
 beforeEach(() => {
   spyLog = jest.spyOn(global.console, 'log')
 })
