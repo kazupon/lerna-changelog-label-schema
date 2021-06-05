@@ -16,8 +16,8 @@ import * as utils from '../../src/utils'
 let spyLog
 let spyError
 beforeEach(() => {
-  spyLog = jest.spyOn(global.console, 'log')
-  spyError = jest.spyOn(global.console, 'error')
+  spyLog = jest.spyOn(global.console, 'log').mockImplementation(() => {})
+  spyError = jest.spyOn(global.console, 'error').mockImplementation(() => {})
 })
 
 afterEach(() => {
