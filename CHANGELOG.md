@@ -1,4 +1,26 @@
 
+## v3.0.1 (2021-06-05)
+
+#### :boom: Breaking Change
+* [#82](https://github.com/kazupon/lerna-changelog-label-schema/pull/82) breaking: drop node v10 ([@kazupon](https://github.com/kazupon))
+
+#### :pushpin: Dependency
+* [#75](https://github.com/kazupon/lerna-changelog-label-schema/pull/75) Update Node.js to v10.24 ([@renovate[bot]](https://github.com/apps/renovate))
+* [#68](https://github.com/kazupon/lerna-changelog-label-schema/pull/68) Update typescript-eslint monorepo to v4 (major) ([@renovate[bot]](https://github.com/apps/renovate))
+* [#71](https://github.com/kazupon/lerna-changelog-label-schema/pull/71) Update circleci/node Docker tag to v10.23 ([@renovate[bot]](https://github.com/apps/renovate))
+* [#58](https://github.com/kazupon/lerna-changelog-label-schema/pull/58) Update dependency eslint to v7 ([@renovate[bot]](https://github.com/apps/renovate))
+* [#61](https://github.com/kazupon/lerna-changelog-label-schema/pull/61) Update typescript-eslint monorepo to v3 (major) ([@renovate[bot]](https://github.com/apps/renovate))
+* [#60](https://github.com/kazupon/lerna-changelog-label-schema/pull/60) Update dependency ts-jest to v26 ([@renovate[bot]](https://github.com/apps/renovate))
+* [#56](https://github.com/kazupon/lerna-changelog-label-schema/pull/56) Update dependency jest to v26 ([@renovate[bot]](https://github.com/apps/renovate))
+* [#63](https://github.com/kazupon/lerna-changelog-label-schema/pull/63) Update dependency @types/jest to v26 ([@renovate[bot]](https://github.com/apps/renovate))
+* [#49](https://github.com/kazupon/lerna-changelog-label-schema/pull/49) Update dependency @types/jest to v25 ([@renovate[bot]](https://github.com/apps/renovate))
+* [#48](https://github.com/kazupon/lerna-changelog-label-schema/pull/48) Update dependency ts-jest to v25 ([@renovate[bot]](https://github.com/apps/renovate))
+* [#47](https://github.com/kazupon/lerna-changelog-label-schema/pull/47) Update dependency jest to v25 ([@renovate[bot]](https://github.com/apps/renovate))
+
+#### Committers: 1
+- kazuya kawaguchi ([@kazupon](https://github.com/kazupon))
+
+
 ## v3.0.0 (2019-12-13)
 
 #### :star: Features
