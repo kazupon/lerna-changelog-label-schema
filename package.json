@@ -41,7 +41,7 @@
     "eslint": "^7.28.0",
     "eslint-plugin-vue-libs": "^4.0.0",
     "jest": "^27.0.4",
-    "lerna-changelog": "^1.0.1",
+    "lerna-changelog": "^2.0.0",
     "opener": "^1.5.2",
     "shipjs": "^0.24.0",
     "ts-jest": "^27.0.2",
